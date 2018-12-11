@@ -14,3 +14,9 @@ Thumbs.db
 .Trashes
 
 .extra
+src/ConsumerWeb/Assets/dist
+NuGet.exe
+sass-lint.yml
+
+yalc.lock
+.yalc

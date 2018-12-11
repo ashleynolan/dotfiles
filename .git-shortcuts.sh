@@ -6,7 +6,6 @@ alias gss='git status -s'
 #add all files
 alias gaa='git add -A'
 
-
 #git pull and push aliases
 alias gp='git pull'
 alias gph='git push'
@@ -18,7 +17,7 @@ function gp {
 
 #pull a specific branch/remote
 function gph {
-	git push "$1" "$2"
+	gph "$1" "$2"
 }
 
 #commit all files with message, and then display status
@@ -47,11 +46,20 @@ function gbrdel {
 	git push origin :"$1"
 }
 
+#pull a specific branch/remote
+function gt {
+	git tag -m "" $1
+	git push origin --tags
+}
+
 #diff in color
 alias gdiff='git diff --color-words'
 
 #get a list of conflicts
 alias conflicts='git diff --name-only --diff-filter=U'
+
+#remove any files after adding to gitignore
+alias gri='git ls-files --ignored --exclude-standard | xargs git rm'
 
 
 alias gclean='git gc --prune=now && git remote prune origin'
@@ -60,9 +68,9 @@ alias gclean='git gc --prune=now && git remote prune origin'
 alias glog='git log --graph --oneline --all --decorate'
 
 #reset to head
-alias gitreset='git reset --hard'
+alias greset='git reset --hard'
 # reset to head and remove all untracked files (including npm installs)
-alias gitreseteverything='git clean -d -x -f; git reset --hard'
+alias greseteverything='git clean -d -x -f; git reset --hard'
 
 
 
@@ -82,21 +90,34 @@ function goops {
 }
 
 
-function gwut {
+function ghelp {
 	echo "
 - - - - - - - - - - - - - -
 Git Convenience Shortcuts:
 - - - - - - - - - - - - - -
-gwut - List all Git Convenience commands and prompt symbols.
-gs - git status
+ghelp - List all Git Convenience commands and prompt symbols
+gp - Git Pull
+gup - Pull (via rebase)
+gph - Git Push
 gaa - Add all changes (including untracted files) to staging
 gc "Message" - Commit all new files & changes with message
 goops - Add changes to previous commit & edit comessage
-gp - Pull (via rebase) then push
-gup - Pull (via rebase)
+- - - - - - - - - - - - - -
+gt v0.0.0 - Tag and push tag to remote
+gb - Show local branches
+gbn - Create new branch
+gbr – Show remote branches
+gbdel - Delete local branch
+gbrdel - Delete remote branch
+- - - - - - - - - - - - - -
+gs - git status
+gss - Visually better git status
 glog - Decorated & graphed log
 gdiff - A word-diff of changes
 gclean - Compress & garbage collect data store
+greset - Hard branch reset
+greseteverything - Hard reset and remove all untracked files
+conflicts - Display list of conflicts
 
 - - - - - - - - - - - - - -
 Prompt Symbols:

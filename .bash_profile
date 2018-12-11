@@ -1,9 +1,16 @@
 source ~/.profile
 
+# for running asp.NET with MicroSoft Code
+source dnvm.sh
+export MONO_MANAGED_WATCHER=disabled
+
 source ~/.customEnvironmentVars
 
 # Add `~/bin` to the `$PATH`
 export PATH="/usr/local/bin:$HOME/bin:$PATH"
+
+#alias for sublime opening from command line
+alias sublime="open -a /Applications/Sublime\ Text.app"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -42,11 +49,17 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
-
 #my extra source files
-source "/Users/ashleynolan/.git-completion.bash"  # Added by git-convenience
-source "/Users/ashleynolan/.git-prompt.sh"  # Added by git-convenience
-source "/Users/ashleynolan/.terminal-prefs.sh"  # Added by git-convenience
-source "/Users/ashleynolan/.git-shortcuts.sh"  # Added by git-convenience
+source "/Users/ashley.nolan/_projects/_setup/dotfiles/.git-completion.bash"  # Added by git-convenience
+source "/Users/ashley.nolan/_projects/_setup/dotfiles/.git-prompt.sh"  # Added by git-convenience
+source "/Users/ashley.nolan/_projects/_setup/dotfiles/.terminal-prefs.sh"  # Added by git-convenience
+source "/Users/ashley.nolan/_projects/_setup/dotfiles/.git-shortcuts.sh"  # Added by git-convenience
+
+source "/Users/ashley.nolan/_projects/_setup/dotfiles/.yarn-shortcuts.sh"  # yarn shortcuts
+
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH="/usr/local/sbin:$PATH"
+
+# set up z.sh
+. ./_bash_plugins/z.sh
