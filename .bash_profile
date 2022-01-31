@@ -9,6 +9,10 @@ source ~/.customEnvironmentVars
 # Add `~/bin` to the `$PATH`
 export PATH="/usr/local/bin:$HOME/bin:$PATH"
 
+# Add NPM Global packages to PATH
+export PATH="$HOME/.npm-packages/bin:$PATH"
+
+
 #alias for sublime opening from command line
 alias sublime="open -a /Applications/Sublime\ Text.app"
 

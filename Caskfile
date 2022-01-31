@@ -5,51 +5,32 @@ install phinze/cask/brew-cask
 tap caskroom/versions
 
 
-cask install adobe-reader 2> /dev/null
-cask install alfred 2> /dev/null
-cask install android-file-transfer 2> /dev/null
-cask install audacity 2> /dev/null
-cask install bbc-iplayer-downloads 2> /dev/null
-cask install boxer 2> /dev/null
-cask install charles 2> /dev/null
-cask install cord 2> /dev/null
-cask install cornerstone 2> /dev/null
-cask install filezilla 2> /dev/null
-cask install firefox 2> /dev/null
-cask install flash-player 2> /dev/null
-cask install fluid 2> /dev/null
-cask install flux 2> /dev/null
-cask install ghostlab 2> /dev/null
-cask install google-chrome 2> /dev/null
-cask install google-chrome-canary 2> /dev/null
-cask install handbrake 2> /dev/null
+Alfred 3 – https://www.alfredapp.com/
+android-file-transfer – https://www.android.com/filetransfer/
+audacity
+Boxer – http://boxerapp.com/
+Charles - https://www.charlesproxy.com/latest-release/download.do
+Filezilla - https://filezilla-project.org/download.php?type=client
+Firefox – https://www.mozilla.org/en-GB/firefox/download
+google-chrome-canary - https://www.google.com/chrome/canary
+handbrake - https://handbrake.fr/
 cask install imagealpha 2> /dev/null
-cask install imageoptim 2> /dev/null
-cask install iterm2 2> /dev/null
-cask install itunesscrobbler 2> /dev/null
-cask install kaleidoscope 2> /dev/null
-cask install lastfm 2> /dev/null
-cask install miro-video-converter 2> /dev/null
-cask install mou 2> /dev/null
-cask install musicmanager 2> /dev/null
-cask install onepassword 2> /dev/null
+imageoptim - https://imageoptim.com/mac
+iterm2 – https://www.iterm2.com/
+itunesscrobbler
+kaleidoscope – need licence
+miro-video-converter - http://www.mirovideoconverter.com
 cask install onyx 2> /dev/null
-cask install opera-mobile-emulator 2> /dev/null
-cask install opera 2> /dev/null
 cask install scrivener 2> /dev/null
-cask install scummvm 2> /dev/null
-cask install sequel-pro 2> /dev/null
-cask install skype 2> /dev/null
-cask install snippets 2> /dev/null
-cask install sourcetree 2> /dev/null
-cask install spotify 2> /dev/null
-cask install steam 2> /dev/null
-cask install the-unarchiver 2> /dev/null
-cask install tunnelblick 2> /dev/null
-cask install unity3d 2> /dev/null
-cask install utorrent 2> /dev/null
-cask install vmware-fusion 2> /dev/null
-cask install vlc 2> /dev/null
+scummvm - https://scummvm.org/
+sequel-pro 2> /dev/null
+skype - use online version
+sourcetree - https://www.sourcetreeapp.com/
+spotify - https://www.spotify.com/uk/download/mac/
+steam - https://store.steampowered.com/about/
+the-unarchiver - https://theunarchiver.com/
+utorrent - https://www.utorrent.com/
+vlc - https://www.videolan.org/vlc/download-macosx.en-GB.html
 
 
 

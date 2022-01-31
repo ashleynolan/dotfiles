@@ -2,7 +2,7 @@
 alias npub='npm publish'
 
 #Upgrade package using interactive terminal
-alias yup='yarn upgrade-interactive --latest'
+alias yup='yarn upgrade-interactive --latest && yarn upgrade'
 
 #Check integrity of packages installed
 alias ycheck='yarn check --integrity'
@@ -43,11 +43,10 @@ function yhelp {
 Yarn Convenience Shortcuts:
 - - - - - - - - - - - - - -
 npub - Publish package via NPM
-yup - Upgrade package dependencies
+yup - Upgrade package dependencies (and downstream dependencies)
 ycheck - Check integrity of packages installed
 yf - Force yarn install
 add/remove - shortcuts for adding and removing packages
-ntl - Display interactive cli list of npm tasks
 - - - - - - - - - - - - - -
 "
 }
