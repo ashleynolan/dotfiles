@@ -19,6 +19,14 @@ unset file
 source ~/_zshplugins/z.sh # searching via zsh-z :: https://github.com/agkozak/zsh-z
 source ~/_projects/_setup/dotfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh # autocomplete via :: https://github.com/zsh-users/zsh-autosuggestions
 
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
 autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select
 

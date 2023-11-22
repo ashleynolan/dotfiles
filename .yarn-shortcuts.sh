@@ -2,7 +2,9 @@
 alias npub='npm publish'
 
 #Upgrade package using interactive terminal
-alias yup='yarn upgrade-interactive --latest && yarn upgrade'
+alias yupa='yarn upgrade-interactive --latest && yarn upgrade'
+alias yup='yarn upgrade-interactive'
+alias yupg='yarn up'
 
 #Check integrity of packages installed
 alias ycheck='yarn check --integrity'

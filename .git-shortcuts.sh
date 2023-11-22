@@ -9,6 +9,7 @@ alias gaa='git add -A'
 #git pull and push aliases
 alias gp='git pull'
 alias gph='git push'
+alias gpho='git push origin'
 
 #pull a specific branch/remote
 function gp {

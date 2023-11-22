@@ -170,3 +170,11 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+function ytr () {
+  if [ "$#" -lt 2 ]; then
+    echo "At least two parameters are required"
+  else
+    yarn turbo run $2 --filter=$1 ${@:3}
+  fi
+}

@@ -23,16 +23,17 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`
 brew install gnu-sed --with-default-names
 # Install Bash 4
-brew install bash
-brew install bash-completion2
+#brew install bash
+#brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
-if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
-  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
-  chsh -s "${BREW_PREFIX}/bin/bash";
-fi;
+#if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
+#  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
+#  chsh -s "${BREW_PREFIX}/bin/bash";
+#fi;
 
 # Install node
+# Uninstall this once installed `npm n` package so that those versions take precedence
 brew install node
 
 # Install Yarn
@@ -70,6 +71,7 @@ brew install lynx
 brew install mongodb
 brew install nmap
 brew install ucspi-tcp # `tcpserver` et al.
+brew install p7zip
 brew install pigz
 brew install pv
 brew install rename
