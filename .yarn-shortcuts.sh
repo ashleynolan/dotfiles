@@ -38,6 +38,15 @@ function yremove {
 	yalc remove "$1"
 }
 
+#turbo filter
+function tf {
+    FILTER=''
+    if [[ $2 ]];
+    then
+        FILTER='--filter=@justeattakeaway/'$2
+    fi
+	yarn "$1" "$FILTER"
+}
 
 function yhelp {
 	echo "

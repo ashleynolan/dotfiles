@@ -83,6 +83,9 @@ else
 	alias gprp='gup && git push'
 fi
 
+# open github with new pr for current branch you are on
+alias gitpr="open -a 'Google Chrome' \"https://github.com/\$(git remote get-url origin | sed -E 's/.*[\/:]([^/]+\/[^/]+)\.git$/\\1/')/compare/main...\$(git symbolic-ref --short HEAD)?expand=1\""
+
 
 #amend a commit by adding more files or changing the commit messge
 function goops {

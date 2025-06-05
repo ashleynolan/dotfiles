@@ -180,3 +180,6 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 
 # Safely trash files
 alias rm=trash
+
+# JETFM alias
+alias jetfm="./jetfm.ps1"
